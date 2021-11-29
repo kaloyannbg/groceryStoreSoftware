@@ -3,7 +3,8 @@
 typedef long long int llint;
 typedef char *string;
 
-struct S_Categories {
+struct S_Categories
+{
     int Category_Id;
     string Category_Name;
 };
@@ -18,3 +19,4 @@ struct S_Products
 
 typedef struct S_Products t_products;
 typedef struct S_Categories t_categories;
+typedef struct S_Bill t_bill;

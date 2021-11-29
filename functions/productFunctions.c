@@ -93,3 +93,17 @@ void printProductsChoice(int *secondMenuChoiceAdress, t_products *arrayOfProduct
         }
     }
 }
+
+void printProductsByCatIdFromStruct(t_products *arrayOfProducts, int totalRows, int selectedCatId)
+{
+    for (int i = 0; i < totalRows; i++)
+    {
+        if (arrayOfProducts[i].Product_Category == selectedCatId)
+        {
+            printf("*** PRODUCT ID: %-6d %-30s %-8.2f BGN ***", arrayOfProducts[i].Product_Id,
+                   arrayOfProducts[i].Product_Name,
+                   arrayOfProducts[i].Product_Price);
+            printNewLines(1);
+        }
+    }
+}

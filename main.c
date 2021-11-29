@@ -2,7 +2,7 @@
 
 int main(void)
 {
-
+    setColor();
     int menuChoice = 0, secondMenuChoice = 0;
 
     do
@@ -30,6 +30,9 @@ int main(void)
         case 2:
             printProductsChoice(&secondMenuChoice, arrayOfProducts);
             break;
+        case 3:
+            printBillChoice(&secondMenuChoice, arrayOfCategories, arrayOfProducts);
+        break;
         default:
             printf(" -- Invalid menu choice -- ");
             break;

@@ -10,7 +10,8 @@ enum eBool {
 
 enum eTypeOfInformation {
     eCategory = 1,
-    eProduct
+    eProduct,
+    eBill
 };
 
 typedef enum eTypeOfInformation en_information;
